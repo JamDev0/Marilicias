@@ -1,0 +1,826 @@
+*
+{
+    margin: 0px;
+}
+
+@font-face
+{
+    font-family: BebasNeue-Regular;
+    src: url(Fontes/BebasNeue-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: coolvetica;
+    src: url(Fontes/coolvetica\ rg.ttf);
+}
+
+@font-face
+{
+    font-family: Roboto-Thin;
+    src: url(Fontes/Roboto-Thin.ttf);
+}
+
+@font-face
+{
+    font-family: Roboto-Regular;
+    src: url(Fontes/Roboto-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: Roboto-Black;
+    src: url(Fontes/Roboto-Black.ttf);
+}
+
+@font-face
+{
+    font-family: CursivaG;
+    src: url(Fontes/Champagne\ &\ Limousines\ Bold.ttf);
+}
+
+html
+{
+    background-image: url(Fundos/Fundo\ \(1\).jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+}
+
+body:hover
+{
+    cursor: default;
+}
+
+#Logo
+{
+    width: 148.5px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#Menu
+{
+    font-family: BebasNeue-Regular;
+    font-size: 45px;
+    text-shadow: -3px 3px 5px black;
+    color: white;
+}
+
+#menus
+{
+    position: absolute;
+    top: 50px;
+    left: 29.5%;
+    width: 50%;
+}
+
+#Slogan
+{
+    top: 200px;
+    position: absolute;
+    font-family: Roboto-Thin;
+    text-align: center;
+    left: 22%;
+    z-index: 1;
+}
+
+.Complemento
+{
+    font-size: 50px;
+    padding-bottom: 28px;
+    text-shadow: -3px 2px 1px #424242;
+}
+
+#Tamanho
+{
+    font-size: 80px;
+    display: inline-block;
+    padding-right: 13px;
+}
+
+#Destaque
+{
+    font-family: Roboto-Regular;
+    font-size: 80px;
+    display: inline-block;
+}
+
+#Explore
+{
+    display: block;
+    font-family: Roboto-Thin;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    padding: 8px 40px;
+    cursor: pointer;
+    text-shadow: -2px 2px black;
+    margin-left: 30%;
+    -webkit-transition: all 0.35s linear;
+    -moz-transition: all 0.35s linear;
+    -ms-transition: all 0.35s linear;
+    -o-transition: all 0.35s linear;
+    transition: all 0.35s linear;
+}
+
+#Seta
+{
+    padding-top: 30px;
+    width: 10%;
+    cursor: pointer;
+    -webkit-transition: all 0.35s linear;
+    -moz-transition: all 0.35s linear;
+    -ms-transition: all 0.35s linear;
+    -o-transition: all 0.35s linear;
+    transition: all 0.35s linear;
+}
+
+.MenuT
+{
+    display: inline;
+    -webkit-transition: all 0.35s linear;
+    -moz-transition: all 0.35s linear;
+    -ms-transition: all 0.35s linear;
+    -o-transition: all 0.35s linear;
+    transition: all 0.35s linear;
+}
+
+.MenuT:hover
+{
+    cursor: pointer;
+    text-decoration: underline #f60d31;
+    filter: brightness(90%);
+}
+
+.triangulos
+{
+    font-size: 25px;
+    display: inline;
+    vertical-align: middle;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.triangulos:hover
+{
+    cursor: default;
+}
+
+#Login
+{
+    position: absolute;
+    left: 89%;
+    top: 20px;
+    width: 108px;
+}
+
+#Login:hover
+{
+    cursor: pointer;
+}
+
+#Entrar
+{
+    position: absolute;
+    top: 132px;
+    left: 89.9%;
+    font-size: 35px;
+}
+
+#Entrar:hover
+{
+    cursor: pointer;
+}
+
+#Corpo
+{
+    width: 100%;
+    background: rgb(87,87,87);
+    background: linear-gradient(0deg, rgba(25,25,25,0) 0%, rgba(25,25,25,1) 10%, rgba(25,25,25,1) 90%, rgba(25,25,25,0) 100%);
+    position: absolute;
+    top: 550px;
+    height: 800px;
+    z-index: 2;
+}
+
+.Opções
+{
+    position: absolute;
+    width: 22.5%;
+    filter: grayscale(100%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: coolvetica;
+    text-align: center;
+    text-shadow: -3px 3px 5px black;
+    color: white;
+    -webkit-transition: all 0.35s linear;
+    -moz-transition: all 0.35s linear;
+    -ms-transition: all 0.35s linear;
+    -o-transition: all 0.35s linear;
+    transition: all 0.35s linear;
+    padding-bottom: 40px;
+}
+
+#ImagemDescriçãoL
+{
+    left: 8.3%;
+    top: 320px;
+    background-image: url(Bolos-Logo/loja.png);
+}
+
+#ImagemDescriçãoR
+{
+    left: 27%;
+    top: 160px;
+    background-image: url(Bolos-Logo/Receitas.png);
+}
+
+#ImagemDescriçãoI
+{
+    left: 45.7%;
+    top: 320px;
+    background-image: url(Bolos-Logo/Ingredientes.png);
+}
+
+#ImagemDescriçãoLo
+{
+    left: 64.4%; 
+    top: 160px;
+    background-image: url(Bolos-Logo/Locais.png);
+}
+
+.Tran
+{
+    -webkit-transition: all 0.35s linear;
+    -moz-transition: all 0.35s linear;
+    -ms-transition: all 0.35s linear;
+    -o-transition: all 0.35s linear;
+    transition: all 0.35s linear;
+}
+
+#TituloL
+{
+    padding-top: 45px;
+    font-size: 30px;
+}
+
+#DesL
+{
+    padding-top: 100px;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 55px;
+}
+
+#DesI
+{
+    padding-top: 80px;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 55px;
+}
+
+#Final
+{
+    background-image: url(Bolos-Logo/Fundo3.jpg);
+    background-size: 100% auto;
+    background-position: 0px 60px;
+    width: 100%;
+    height: 900px;
+    z-index: 1;
+    position: absolute;
+    top: 840px;
+}
+
+
+#Missão
+{
+    position: relative;
+    top: 450px;
+    font-size: 20px;
+    color: white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-left: 13.5%;
+    margin-right: 13.5%;
+    text-align: center;
+    font-family: Roboto-Regular;
+    text-shadow: -1px 1px 1px #424242;
+}
+
+#MT
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Rodapé
+{
+    position: relative;
+    top: 450px;
+    z-index: 2;
+    font-size: 20px;
+    font-family: Roboto-Regular;
+    color: white;
+    text-shadow: -1px 1px 1px #424242;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: rgba(0,0,0,0.2);
+    width: 18.4%;
+    height: 298px;
+}
+
+#Ro
+{
+    left: 13.5%;
+}
+
+#Ro1
+{
+    top: 152px;
+    left: 31.9%;
+}
+
+#Ro2
+{
+    top: -146px;
+    left: 50.25%;
+}
+
+#Mi
+{
+    font-family: Roboto-Black;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 5px;
+}
+
+#Mi1
+{
+    font-family: Roboto-Black;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    padding-left: 5px;
+    display: inline-block;
+}
+
+#Mi2
+{
+    font-family: Roboto-Black;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    padding-left: 5px;
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.Mis
+{
+    padding-bottom: 15px;
+    padding-right: 8px;
+    padding-left: 5px;
+}
+
+.Mis1
+{
+    padding-bottom: 18px;
+    padding-right: 8px;
+    padding-left: 5px;
+    margin-right: 60px;
+    display: inline-block;
+}
+
+#espacin
+{
+    padding-bottom: 45px;
+}
+
+#Log
+{
+    width: 75%;
+    padding-left: 12.5%;
+}
+
+#Ro3
+{
+    padding-top: 10px;
+    top: -444px;
+    left: 68.5%;
+    border-right: 0px solid #000;
+    display: block;
+}
+
+.Creditos
+{
+    position: absolute;
+    display: inline-block;
+    top: 865px;
+    color: white;
+    font-family: CursivaG;
+}
+
+#CP
+{
+    left: 73.5%;
+}
+
+#DW
+{
+    left: 16.5%;
+}
+
+.Links
+{
+    cursor: pointer;
+    -webkit-transition: all 0.45s linear;
+    -moz-transition: all 0.45s linear;
+    -ms-transition: all 0.45s linear;
+    -o-transition: all 0.45s linear;
+    transition: all 0.45s linear;
+}
+
+.Links:hover
+{
+    filter: brightness(70%);
+    text-decoration: underline;
+}
+
+#expadir
+{
+    visibility: hidden;
+}
+
+#Logo2
+{
+    visibility: hidden;
+}
+
+#Sobe3
+{
+    visibility: hidden;
+}
+
+#Sobe4
+{
+
+    visibility: hidden;
+}
+
+#Setinha
+{
+    visibility: hidden;
+}
+
+#Escuro
+{
+    display: none;
+}
+
+@media all and (max-width: 1000px) 
+{
+    html
+    {
+        background-size: 290% auto;
+        background-position: 50% -10px;    
+    }
+
+    #Slogan
+    {
+        left: 0px;
+        top: 590px;
+        background-color: rgba(0,0,0,0.1);
+    }
+
+    .Complemento
+    {
+        font-family: Roboto-Regular;
+        font-size: 110px;
+        padding-bottom: 28px;
+        text-shadow: -5px 6px 3px black;
+    }
+    
+    #Tamanho
+    {
+        font-size: 130px;
+        display: inline-block;
+        padding-right: 13px;
+        text-shadow: -5px 10px 3px black;
+    }
+    
+    #Destaque
+    {
+        font-family: Roboto-Black;
+        font-size: 130px;
+        display: inline-block;
+        text-shadow: -5px 10px 3px black;
+    }
+    
+    #Explore
+    {
+        font-family: Roboto-Regular;
+        font-size: 110px;
+        background-color: rgba(0,0,0,0.2);
+        border-width: 6px;
+        padding: 1% 4%;
+        text-shadow: -7px 6px black;
+        margin-left: 2.4%;
+        margin-top: 40px;
+    }
+    
+    #Seta
+    {
+        width: 24%;
+    }
+    
+    .MenuT
+    {
+        display: inline;
+        -webkit-transition: all 0.35s linear;
+        -moz-transition: all 0.35s linear;
+        -ms-transition: all 0.35s linear;
+        -o-transition: all 0.35s linear;
+        transition: all 0.35s linear;
+    }
+
+    #Menu
+    {
+        font-size: 120px;
+        margin-left: 0%;
+        margin-top: 0px;
+        z-index: 2;
+    }
+
+    
+    #Logo
+    {
+        visibility: hidden;
+    }
+
+    #Logo2
+    {
+        position: absolute;
+        visibility: visible;
+        width: 55%;
+        left: 22.5%;
+        top: 20px;
+    }
+
+    #menus
+    {
+        background-image: url(Fundos/FundoPreto.jpg);
+        width: 100%;
+        height: 875px;
+        position: fixed;
+        left: 0%;
+        top: -880px;
+        z-index: 5;
+        transition: all 0.7s ease-out;
+    }
+
+    .MenuT
+    {
+        text-align: center;
+        margin: 0px;
+        padding-left: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: block;
+        background-color: rgba(1, 1, 2,1);
+    }
+
+    #Escuro
+    {
+        position: fixed;
+        display: inline;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        top: 0px;
+        z-index: 1;
+        transition: all 0.7s linear;
+    }
+
+    .triangulos
+    {
+        display: block;
+        text-align: center;
+        font-size: 100px;
+        position: relative;
+        top: -45px;
+        margin: 0px;
+        padding: 0px;
+        z-index: 3;
+    }
+
+    #Sobe
+    {
+        position: relative;
+        top: -100px;
+        z-index: 2;
+    }
+    
+    #Sobe1
+    {
+        top: -145px;
+    }
+
+    #Sobe2
+    {
+        top: -200px;
+        z-index: 2;
+        position: relative;
+    }
+
+    #Sobe3
+    {
+        top: -245px;
+        visibility: visible;
+    }
+
+    #Sobe4
+    {
+        top: -300px;
+        z-index: 2;
+        position: relative;
+        visibility: visible;
+    }
+
+    #Caixinha
+    {
+        display: none;
+    }
+
+    #Setinha
+    {
+        visibility: visible;
+        position: relative;
+        left: 30%;
+        top: -270px;
+        width: 40%;
+        transition: all .7s linear;
+        z-index: 0;
+    }
+
+    #Corpo
+    {
+        visibility: visible;
+        height: 3300px;
+        z-index: 2;
+        top: 1600px;
+        background: rgb(87,87,87);
+        background: linear-gradient(0deg, rgba(25,25,25,0) 0%, rgba(25,25,25,1) 3%, rgba(25,25,25,1) 97%, rgba(25,25,25,0) 100%);
+    }
+
+    .Opções
+    {
+        width: 78%;
+        text-shadow: -8px 8px 2px black;
+        padding-bottom: 450px;
+    }
+
+    #ImagemDescriçãoL
+    {
+        left: 1%;
+        top: 200px;
+        background-image: url(Bolos-Logo/loja.png);
+    }
+
+    #ImagemDescriçãoR
+    {
+        left: 21%;
+        top: 910px;
+        background-image: url(Bolos-Logo/Receitas.png);
+    }
+
+    #ImagemDescriçãoI
+    {
+        left: 1%;
+        top: 1620px;
+        background-image: url(Bolos-Logo/Ingredientes.png);
+    }
+
+    #ImagemDescriçãoLo
+    {
+        left: 21%; 
+        top: 2330px;
+        background-image: url(Bolos-Logo/Locais.png);
+    }
+
+    #TituloL
+    {
+        padding-top: 100px;
+        font-size: 95px;
+    }
+
+    #DesL
+    {
+        padding-top: 40px;
+        font-size: 80px;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-bottom: 55px;
+    }
+
+    #DesI
+    {
+        padding-top: 20px;
+        font-size: 80px;
+        margin-left: 14%;
+        margin-right: 14%;
+        padding-bottom: 55px;
+    }
+    
+    #Final
+    {
+        height: 4000px;
+        top: 4400px;
+        z-index: 1;
+        background-size: 665% auto;
+        background-position: 48% 0px; 
+        background-repeat: no-repeat;  
+    }
+
+    #Missão
+    {
+        font-size: 120px;
+        border-top: 0px;
+        border-bottom: 0px;
+        border-right: 12px solid white;
+        border-left: 12px solid white;
+        margin-left: 7.4%;
+        margin-right: 7.4%;
+        text-shadow: -8px 8px 2px black;
+        background-color: rgba(0,0,0,0.1);
+    }
+
+    #Ro
+    {
+        visibility: hidden;
+    }
+
+    #Ro1
+    {
+        visibility: hidden;
+    }
+
+    #Ro2
+    {
+        visibility: hidden;
+    }
+
+    #Ro3
+    {
+        border-top: 12px solid white;
+        border-right: 12px solid white;
+        border-left: 12px solid white;
+        border-bottom: 0px;
+        left: 7.4%;
+        width: 86%;
+        height: 800px;
+    }
+
+    #Log
+    {
+        width: 160%;
+        padding-left: 5%;
+    }
+
+    .Creditos
+    {
+        font-size: 40px;
+        position: absolute;
+        top: 3790px;
+    }
+    
+    #CP
+    {
+        left: 34.5%;
+        top: 3900px;
+    }
+
+    #DW
+    {
+        left: 12%;
+    }
+
+    #Entrar
+    {
+        visibility: hidden;
+    }
+
+    #Login
+    {
+    visibility: hidden;
+    }
+}

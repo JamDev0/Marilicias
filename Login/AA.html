@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html id="Html1">
+    <head>
+        <meta charset="UTF-8">
+        <title>Marilícias</title>
+        <style>
+            *
+            {
+                margin: 0px;
+            }
+
+            #Caixinha
+            {
+                display: none;
+            }
+
+            #Setinha
+            {
+                width: 20%;
+                position: relative;
+            }
+
+            #Div2
+            {
+                background-color: black;
+                width: 35%;
+                top: 0px;
+                position: relative;
+                left: -35%;
+                transition: all .2s linear;
+            }
+
+            #Texto
+            {
+                font-size: 150px;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="Div1">
+            <div id="Div2">
+                <p id="Texto">Teste</p>
+            </div>
+        </div>
+        
+        <input type="checkbox" id="Caixinha">
+        <label for="Caixinha" onclick="Teste()"><img id="Setinha" src="Bolos-Logo/Seta2.png"></label>
+    </body>
+
+    <script type="text/javascript">
+        var Con = 1;
+        function Teste()
+        {
+            Con = Con + 1;
+            Con = Con % 2;
+            console.log(Con);
+            if(Con == 0)
+            {
+                var Div = document.getElementById("Div2");
+                var Estilo = document.createAttribute("style")
+                Estilo.value = "left:0%";
+                Div.setAttributeNode(Estilo);
+            }
+            else
+            {
+                var Div = document.getElementById("Div2");
+                var Estilo = document.createAttribute("style")
+                Estilo.value = "left:-35%";
+                Div.setAttributeNode(Estilo);
+            }
+
+        }
+    </script>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html id="Html1">
+    <head>
+        <meta charset="UTF-8">
+        <title>Marilícias</title>
+        <link rel="stylesheet" href="ICss.css">
+    </head>
+
+    <body>
+        <div id="Escuro"></div>
+        <div id="Menu">
+            <img src="Bolos-Logo/Logo5.png" id="Logo">
+            <img src="Bolos-Logo/Logo2.png" id="Logo2">
+            <div id="menus">
+                <p class="MenuT">Sobre nós</p>
+                <p class="triangulos">▼</p>
+                <p id="Sobe" class="MenuT">Loja</p>
+                <p id="Sobe1" class="triangulos">▼</p>
+                <p id="Sobe2" class="MenuT">Parceiros</p>
+                <p id="Sobe3" class="triangulos">▼</p>
+                <p id="Sobe4" class="MenuT" onclick="Red()">Login</p>
+                <input type="checkbox" id="Caixinha">
+                <label for="Caixinha" onclick="Abaixar()"><img id="Setinha" src="Bolos-Logo/Seta2.png"></label>
+            </div>
+            <img src="Bolos-Logo/login.png" id="Login" class="Tran" onclick="Red()" onmouseover="Escurecer2()" onmouseout="Clarear2()">
+            <p id="Entrar" class="Tran" onclick="Red()" onmouseover="Escurecer2()" onmouseout="Clarear2()">Entrar</p>
+            <div id="Slogan">
+                <p class="Complemento">Marilícias é simples.</p>
+                <p class="Complemento" id="Tamanho">Simplesmente</p><p id="Destaque">surreal.</p>
+                <input type="button" id="Explore" value="Descubra o irreal" onmouseover="Escurecer()" onmouseout="Clarear()" onclick="Descubra()">
+                <img id="Seta" onclick="Descubra()" onmouseover="Escurecer()" onmouseout="Clarear()" src="Bolos-Logo/Seta.png">
+            </div>
+        </div>
+
+
+
+        <div id="Corpo">
+            <div id="ImagemDescriçãoL" onmouseover="teste()" onmouseout="teste2()" class="Opções">
+                <div id="Img1l" class="Tran">
+                    <p id="TituloL">Loja</p>
+                    <p id="DesL">Explore nossos produtos de altíssima qualidade.</p>
+                </div>
+            </div>
+            <div id="ImagemDescriçãoR" onmouseover="testeR()" onmouseout="testeR2()" class="Opções">
+                <div id="Img1r" class="Tran">
+                    <p id="TituloL">Receitas</p>
+                    <p id="DesL">Venha dar uma olhada nas nossas receitas.</p>
+                </div>
+            </div>
+            <div id="ImagemDescriçãoI" onmouseover="testeI()" onmouseout="testeI2()" class="Opções">
+                <div id="Img1I" class="Tran">
+                    <p id="TituloL">Ingredientes</p>
+                    <p id="DesI">Descubra a origem dos ingredientes que usamos.</p>
+                </div>
+            </div>
+
+            <div id="ImagemDescriçãoLo" onmouseover="testeLo()" onmouseout="testeLo2()" class="Opções">
+                <div id="Img1Lo" class="Tran">
+                    <p id="TituloL">Locais</p>
+                    <p id="DesL">Veja onde encontrar nossas filiais.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Final">
+            <table id="Missão">
+                <td id="MT">Estamos trabalhando para levar nossas delícias gourmetizadas para todos, pelo menor preço e onde quer que estejam. Afinal, todos merecem uma experiencia incrivel com comida.</td>
+            </table>
+            <table class="Rodapé" id="Ro">
+                <tr>
+                    <td id="Mi">Quem somos</td>
+                </tr>
+                <tr>
+                    <td class="Mis"><p class="Links">Funcionarios destaques!</p></td>
+                </tr>
+                <tr>
+                    <td class="Mis"><p class="Links">Conceito</p></td>
+                </tr>
+                <tr>
+                    <td class="Mis"><p class="Links">História</p></td>
+                </tr>
+                <tr>
+                    <td class="Mis" id="espacin"><p class="Links">Sede</p></td>
+                </tr>
+            </table>
+            <table class="Rodapé" id="Ro1">
+                    <td id="Mi1">Fale com a gente</td>
+                    <td class="Mis1"><p class="Links">WhatsApp</p></td>
+                    <td class="Mis1"><p class="Links">Telefones</p></td>
+                    <td class="Mis1"><p class="Links">E-Mail proficional</p></td>
+            </table>
+            <table class="Rodapé" id="Ro2">
+                    <td id="Mi2">Loja</td>
+                    <td class="Mis1"><p class="Links">Bolos</p></td>
+                    <td class="Mis1"><p class="Links">Doces</p></td>
+                    <td class="Mis1"><p class="Links">Pães</p></td>
+                    <td class="Mis1"><p class="Links">Salgados</p></td>
+            </table>
+            <table class="Rodapé" id="Ro3">
+                <td id="aa"><img id="Log" src="Bolos-Logo/Logo5.png"></td>
+        </table>
+        <p class="Creditos" id="DW">Desenvolvido por WaterManBr18@gmail.com</p>
+        <p class="Creditos" id="CP">Site sem Copyright</p>
+        </div>
+        
+
+
+
+        <script type="text/javascript">
+            var Con = 1;
+            function Abaixar()
+            {
+                Con = Con + 1;
+                Con = Con % 2;
+                if(Con == 0)
+                {
+                    var Div = document.getElementById("menus");
+                    var Seta = document.getElementById("Setinha");
+                    var Escuro = document.getElementById("Escuro");
+
+                    var Estilo = document.createAttribute("style");
+                    var Estilo2 = document.createAttribute("style");
+                    var Estilo3 = document.createAttribute("style");
+
+                    Estilo.value = "top:0px";
+                    Estilo2.value = "transform: rotate(180deg);";
+                    Estilo3.value = "background-color: rgba(0, 0, 0, 0.8); z-index:3;";
+
+                    Div.setAttributeNode(Estilo);
+                    Seta.setAttributeNode(Estilo2);
+                    Escuro.setAttributeNode(Estilo3);
+                }
+                else
+                {
+                    var Div = document.getElementById("menus");
+                    var Seta = document.getElementById("Setinha");
+                    var Escuro = document.getElementById("Escuro");
+
+                    var Estilo = document.createAttribute("style");
+                    var Estilo2 = document.createAttribute("style");
+                    var Estilo3 = document.createAttribute("style");
+
+                    Estilo.value = "top:-880px";
+                    Estilo2.value = "transform: rotate(0deg);";
+                    Estilo3.value = "background-color: rgba(0, 0, 0, 0.0);  z-index:0;";
+
+                    Div.setAttributeNode(Estilo);
+                    Seta.setAttributeNode(Estilo2);
+                    Escuro.setAttributeNode(Estilo3);
+                }
+
+            }
+
+            function Red()
+            {
+                window.location.href = "Login.html";
+            }
+        
+            function Descubra()
+            {
+                var WWidth = window.innerWidth;
+                console.log(WWidth);
+                if(WWidth > 1000)
+                {
+                    window.scroll({
+                        top:615,
+                        behavior:"smooth",
+                    });
+                }
+                else
+                {
+                    window.scroll({
+                        top:1770,
+                        behavior:"smooth",
+                    });
+                }
+            }
+        
+        
+            function teste()
+            {
+                var ImagemL = document.getElementById("ImagemDescriçãoL");
+                var estilo = document.createAttribute("style");
+                estilo.value = "cursor: pointer; filter: grayscale(0%)";
+                ImagemL.setAttributeNode(estilo);
+        
+                var textol = document.getElementById("Img1l");
+                var estiloT = document.createAttribute("style");
+                estiloT.value = "filter: blur(2px) opacity(10%);";
+                textol.setAttributeNode(estiloT);
+            }
+        
+            function teste2()
+            {
+                var ImagemL = document.getElementById("ImagemDescriçãoL");
+                var estilo = document.createAttribute("style");
+                estilo.value = "cursor: pointer; filter: grayscale(100%)";
+                ImagemL.setAttributeNode(estilo);
+        
+                var textol = document.getElementById("Img1l");
+                var estiloT = document.createAttribute("style");
+                estiloT.value = "opacity: 100%;";
+                textol.setAttributeNode(estiloT);
+            }
+        
+        
+        
+            function testeR()
+            {
+                var ImagemR = document.getElementById("ImagemDescriçãoR");
+                var estilo = document.createAttribute("style");
+                estilo.value = "cursor: pointer; filter: grayscale(0%)";
+                ImagemR.setAttributeNode(estilo);
+        
+                var textor = document.getElementById("Img1r");
+                var estiloT = document.createAttribute("style");
+                estiloT.value = "filter: blur(2px) opacity(10%);";
+                textor.setAttributeNode(estiloT);
+            }
+        
+            function testeR2()
+            {
+                var ImagemR = document.getElementById("ImagemDescriçãoR");
+                var estilo = document.createAttribute("style");
+                estilo.value = "cursor: pointer; filter: grayscale(100%)";
+                ImagemR.setAttributeNode(estilo);
+        
+                var textor = document.getElementById("Img1r");
+                var estiloT = document.createAttribute("style");
+                estiloT.value = "opacity: 100%;";
+                textor.setAttributeNode(estiloT);
+            }
+        
+        
+        
+            function testeI()
+            {
+                var ImagemI = document.getElementById("ImagemDescriçãoI");
+                var estilo = document.createAttribute("style");
+                estilo.value = "cursor: pointer; filter: grayscale(0%)";
+                ImagemI.setAttributeNode(estilo);
+        
+                var textol = document.getElementById("Img1I");
+                var estiloT = document.createAttribute("style");
+                estiloT.value = "filter: blur(2px) opacity(10%);";
+                textol.setAttributeNode(estiloT);
+            }
+        
+            function testeI2()
+            {
+                var ImagemI = document.getElementById("ImagemDescriçãoI");
+                var estilo = document.createAttribute("style");
+                estilo.value = "cursor: pointer; filter: grayscale(100%)";
+                ImagemI.setAttributeNode(estilo);
+        
+                var textol = document.getElementById("Img1I");
+                var estiloT = document.createAttribute("style");
+                estiloT.value = "opacity: 100%;";
+                textol.setAttributeNode(estiloT);
+            }
+        
+        
+            function testeLo()
+            {
+                var ImagemLo = document.getElementById("ImagemDescriçãoLo");
+                var estilo = document.createAttribute("style");
+                estilo.value = "cursor: pointer; filter: grayscale(0%)";
+                ImagemLo.setAttributeNode(estilo);
+        
+                var textol = document.getElementById("Img1Lo");
+                var estiloT = document.createAttribute("style");
+                estiloT.value = "filter: blur(2px) opacity(10%);";
+                textol.setAttributeNode(estiloT);
+            }
+        
+            function testeLo2()
+            {
+                var ImagemLo = document.getElementById("ImagemDescriçãoLo");
+                var estilo = document.createAttribute("style");
+                estilo.value = "cursor: pointer; filter: grayscale(100%)";
+                ImagemLo.setAttributeNode(estilo);
+        
+                var textol = document.getElementById("Img1Lo");
+                var estiloT = document.createAttribute("style");
+                estiloT.value = "opacity: 100%;";
+                textol.setAttributeNode(estiloT);
+            }
+
+            function Escurecer()
+            {
+                var Botão = document.getElementById("Explore");
+                var Seta = document.getElementById("Seta");
+                
+
+                var estiloB = document.createAttribute("style");
+                estiloB.value = "filter: brightness(70%);";
+                Botão.setAttributeNode(estiloB);
+
+                var estiloB2 = document.createAttribute("style");
+                estiloB2.value = "filter: brightness(70%);";
+                Seta.setAttributeNode(estiloB2);
+            }
+
+            function Clarear()
+            {
+                var Botão = document.getElementById("Explore");
+                var Seta = document.getElementById("Seta");
+                var estiloB = document.createAttribute("style");
+                estiloB.value = "filter: brightness(100%);";
+                Botão.setAttributeNode(estiloB);
+                var estiloB2 = document.createAttribute("style");
+                estiloB2.value = "filter: brightness(100%);";
+                Seta.setAttributeNode(estiloB2);
+            }
+
+            function Escurecer2()
+            {
+                var Login = document.getElementById("Login");
+                var Entrar = document.getElementById("Entrar");
+
+
+                var estiloB3 = document.createAttribute("style");
+                estiloB3.value = "filter: brightness(70%);";
+                Login.setAttributeNode(estiloB3);
+
+                var estiloB4 = document.createAttribute("style");
+                estiloB4.value = "filter: brightness(70%);";
+                Entrar.setAttributeNode(estiloB4);
+            }
+
+            function Clarear2()
+            {
+                var Login = document.getElementById("Login");
+                var Entrar = document.getElementById("Entrar");
+                
+
+                var estiloB3 = document.createAttribute("style");
+                estiloB3.value = "filter: brightness(100%);";
+                Login.setAttributeNode(estiloB3);
+
+                var estiloB4 = document.createAttribute("style");
+                estiloB4.value = "filter: brightness(100%);";
+                Entrar.setAttributeNode(estiloB4);
+            }
+        </script>
+    </body>
+</html>

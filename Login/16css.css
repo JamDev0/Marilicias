@@ -1,0 +1,89 @@
+@font-face
+{
+    font-family: Brotherline;
+    src: url(Fontes/Brotherline.ttf);
+}
+
+*
+{
+    margin: 0px;
+}
+
+html
+{
+    background-image: url(Fundos/Ceu2.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    font-family: Brotherline;
+    color: white;
+}
+
+#Texto1
+{
+    text-align: center;
+    font-size: 350px;
+    padding-top: 100px;
+}
+
+#CTexto
+{
+    padding-left: 18px;
+    font-size: 200px;
+    display: inline;
+}
+
+#Para1
+{
+    font-size: 100px;
+    display: inline;
+}
+
+#Para11
+{
+    font-size: 100px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+#M
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+#A
+{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#Para2
+{
+    font-size: 100px;
+    display: inline;
+}
+
+#J
+{
+    width: 90%;
+    padding-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#AA
+{
+    text-align: center;
+    font-size: 150px;
+    padding-top: 10px;
+}
+
+#Texto
+{
+    text-align: center;
+    font-size: 110px;
+    padding-top: 50px;
+}

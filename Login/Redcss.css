@@ -1,0 +1,59 @@
+@font-face
+{
+    font-family: ChampagneLimousines;
+    src: url(Fontes/Champagne\ &\ Limousines.ttf);
+}
+
+*
+{
+    margin: 0px;
+}
+
+html
+{
+    background-color: #1c1c1c;
+}
+
+div
+{
+    margin-top: 50%;
+    background-color: black;
+    width: 90%;
+    border-radius: 50px;
+    margin-left: 5%;
+    box-shadow: -7px 7px 14px white;
+}
+
+p
+{
+    text-align: center;
+    color: white;
+    font-size: 110px;
+    padding-top: 30px;
+    font-family: ChampagneLimousines;
+}
+
+#Fone
+{
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 40%;
+}
+
+#Core
+{
+    height: 90px;
+    margin-left: 5px;
+}
+
+a
+{
+    text-align: center;
+    color: #00f861;
+    font-size: 90px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: ChampagneLimousines;
+    display: block;
+    text-decoration: none;
+}
