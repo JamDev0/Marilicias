@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html id="Html1">
+    <head>
+        <meta charset="UTF-8">
+        <title>Recuperar senha</title>
+        <link rel="stylesheet" href="ECss.css">
+    </head>
+
+    <body>
+        <input type="checkbox" id="Cores">
+        <input id="Azul1" class="botões" type="button" onclick="Azul1()">
+        <input id="Azul2" class="botões" type="button" onclick="Azul2()">
+        <input id="Rosa1" class="botões" type="button" onclick="Rosa1()">
+        <input id="Rosa2" class="botões" type="button" onclick="Rosa2()">
+        <input id="PRETO" class="botões" type="button" onclick="PRETO()">
+        <img id="Logo" src="Bolos-Logo/Logo2.png">
+        <div id="Caixa">
+            <p id="Titulo">Requirir redefinição de senha</p>
+            <input type="email" name="E-Mail" placeholder="Seu E-Mail" class="Inputs">
+            <input type="text" name="Nome" placeholder="Seu nome de usuário" class="Inputs">
+            <input type="button" value="Enviar pedido" id="Enviar" onclick="Enviar()">
+        </div>
+    </body>
+</html>
+
+
+<script type="text/javascript">
+    function Azul1()
+    {
+        var html1 = document.getElementById("Html1");
+        var Caixa1 = document.getElementById("Caixa");
+
+
+        var CorF = document.createAttribute("style")
+        CorF.value = "background-image: url('Fundos/FundoAzul1.jpg');";
+
+        var CorC = document.createAttribute("style")
+        CorC.value = "background-image: url('Caixas/MCaixaAzul1.png');";
+
+        html1.setAttributeNode(CorF);
+        Caixa1.setAttributeNode(CorC);
+
+    }
+    function Azul2()
+    {
+        var html1 = document.getElementById("Html1");
+        var Caixa1 = document.getElementById("Caixa");
+
+
+        var CorF = document.createAttribute("style")
+        CorF.value = "background-image: url('Fundos/FundoAzul2.jpg');";
+
+        var CorC = document.createAttribute("style")
+        CorC.value = "background-image: url('Caixas/MCaixaAzul2.png');";
+
+        html1.setAttributeNode(CorF);
+        Caixa1.setAttributeNode(CorC);
+    }
+    function Rosa1()
+    {
+        var html1 = document.getElementById("Html1");
+        var Caixa1 = document.getElementById("Caixa");
+
+
+        var CorF = document.createAttribute("style")
+        CorF.value = "background-image: url('Fundos/FundoRosa1.jpg');";
+
+        var CorC = document.createAttribute("style")
+        CorC.value = "background-image: url('Caixas/MCaixaRosa1.png');";
+
+        html1.setAttributeNode(CorF);
+        Caixa1.setAttributeNode(CorC);
+    }
+    function Rosa2()
+    {
+        var html1 = document.getElementById("Html1");
+        var Caixa1 = document.getElementById("Caixa");
+
+
+        var CorF = document.createAttribute("style")
+        CorF.value = "background-image: url('Fundos/FundoRosa2.jpg');";
+
+        var CorC = document.createAttribute("style")
+        CorC.value = "background-image: url('Caixas/MCaixaRosa2.png');";
+
+        html1.setAttributeNode(CorF);
+        Caixa1.setAttributeNode(CorC);
+    }
+    function PRETO()
+    {
+        var html1 = document.getElementById("Html1");
+        var Caixa1 = document.getElementById("Caixa");
+
+
+        var CorF = document.createAttribute("style")
+        CorF.value = "background-image: url('Fundos/FundoPreto.jpg');";
+
+        var CorC = document.createAttribute("style")
+        CorC.value = "background-image: url('Caixas/MCaixaPreta.png');";
+
+        html1.setAttributeNode(CorF);
+        Caixa1.setAttributeNode(CorC);
+    }
+
+    function Enviar()
+    {
+        window.location.href = "Aviso.html";
+    }
+</script>
